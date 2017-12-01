@@ -1,0 +1,266 @@
+section.companie-show{
+    width: auto;
+    margin-top: 37px;
+}
+section.companie-show .datas{
+    width: auto;
+    background: #f9f9f9;
+    border-top: 5px solid #2ecc71;
+    padding: 15px;
+}
+section.companie-show .datas .data{
+    width: auto;
+    background: #f9f9f9;
+    padding: 15px;
+}
+section.companie-show .datas .data .title{
+    color: #34495e;
+    font-size: 31px;
+/*    font-weight: bold;*/
+    margin-bottom: 15px;
+}
+section.companie-show .datas .data .title > i.fa{
+    color: #2ecc71;
+}
+section.companie-show .datas .data.about p{
+    color: #34495e;
+    font-size: 17px;
+}
+section.companie-show .datas .data.projects{
+    color: #34495e;
+    font-size: 17px;
+    padding-bottom: -27px
+}
+section.companie-show .datas .data.projects .project{
+    background: #eee;
+    border-bottom: 5px solid #2ecc71;
+    text-align: center;
+    padding: 25px 9px;
+    margin-bottom: 27px
+}
+section.companie-show .datas .data.projects .project img{
+    width: 125px;
+    height: 125px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+section.companie-show .datas .data.projects .project b{
+    color: #34495e;
+    font-size: 17px;
+    display: block;
+}
+section.companie-show .datas .data.team{
+    width: auto;
+}
+section.companie-show .datas .data.team .member > .media{
+    width: auto;
+    margin: 5px 0px;
+}
+section.companie-show .datas .data.team .member > .media img{
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+}
+section.companie-show .datas .data.team .member > .media h4{
+    font-size: 21px;
+    margin: 0px;
+}
+section.companie-show .datas .data.team .member > .media p{
+    font-size: 17px;
+    color: #aaa;
+    margin: 0px;
+}
+section.companie-show .datas .data.rsses{}
+section.companie-show .datas .data.rsses > .rss{
+    height: 102px;
+    position: relative;
+    background: #eee;
+    border-right: 5px solid #2ecc71;
+    padding: 15px;
+    padding-left: 102px;
+    margin-bottom: 15px;
+}
+section.companie-show .datas .data.rsses > .rss .rss-title{
+    color: #2ecc71;
+    font-size: 21px;
+}
+section.companie-show .datas .data.rsses > .rss .rss-body{
+    color: #34495e;
+    font-size: 15px;
+}
+section.companie-show .datas .data.rsses > .rss .rss-show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px;
+    height: 102px;
+    background: #2ecc71;
+    color: #fff;
+    font-size: 59px;
+    text-align: center;
+    padding-top: 24px;
+}
+
+
+section.companie-show .widget{
+    width: auto;
+    background: #f9f9f9;
+/*    border: 1px solid #eee;*/
+    border-top: 3px solid #2ecc71;
+    border-bottom: 3px solid #2ecc71;
+    margin-bottom: 35px;
+    padding: 19px;
+}
+section.companie-show .widget > .title{
+    color: #34495e;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+section.companie-show .widget.info{
+    text-align: center;
+    margin-top: 57px;
+}
+section.companie-show .widget.info img{
+    width: 125px;
+    height: 125px;
+        background: #fff;
+    border: 3px solid #2ecc71;
+/*    border-radius: 50%;*/
+    border-radius: 17%;
+    margin-top: -81px;
+}
+section.companie-show .widget.info .infos{
+    width: auto;
+    text-align: right;
+}
+section.companie-show .widget.info .infos p{
+    font-size: 17px;
+}
+section.companie-show .widget.info .infos p b{
+    color: #34495e;
+}
+section.companie-show .widget.info .infos p span{
+    margin-right: 7px;
+}
+section.companie-show .widget.info .infos p span a{
+    color: #2ecc71;
+}
+
+section.companie-show .widget.rating{
+/*    display: none;*/
+    text-align: center;
+}
+section.companie-show .widget.rating .ratingbar{
+    width: 100%;
+    background: #ddd;
+    border-radius: 3px;
+    text-align: left;
+    padding: 7px;
+}
+section.companie-show .widget.rating .ratingbar .rating-progress{
+    height: 15px;
+    background: #34495e;
+    border-radius: 3px;
+}
+
+section.companie-show .widget.rating .ratingbar .rating-progress.zero{
+    width: 100% !important;
+    background: #222;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}section.companie-show .widget.rating .ratingbar .rating-progress.Bad{
+    background: #c94a30;
+}section.companie-show .widget.rating .ratingbar .rating-progress.Mediocre{
+    background: #f48f00;
+}section.companie-show .widget.rating .ratingbar .rating-progress.Good{
+    background: #71a340;
+}section.companie-show .widget.rating .ratingbar .rating-progress.VGood{
+    background: #428500;
+}section.companie-show .widget.rating .ratingbar .rating-progress.Excellent{
+    background: #316300;
+}
+
+section.companie-show .widget.rating .value{
+    width: 39%;
+    text-align: center;
+    background: #ddd;
+    border-radius: 0px 0px 23px 23px;
+    direction: ltr;
+    margin: 0px auto;
+}
+section.companie-show .widget.rating .value > span{
+    color: #222;
+    font-size: 27px;
+}section.companie-show .widget.rating .value > i.fa{
+    color: #222;
+    font-size: 27px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 2px 4px;
+
+}
+section.companie-show .widget.rating .value > i.fa.Bad{
+    color: #c94a30;
+}section.companie-show .widget.rating .value > i.fa.Mediocre{
+    color: #f48f00;
+}section.companie-show .widget.rating .value > i.fa.Good{
+    color: #71a340;
+}section.companie-show .widget.rating .value > i.fa.VGood{
+    color: #428500;
+}section.companie-show .widget.rating .value > i.fa.Excellent{
+    color: #316300;
+}
+
+section.companie-show .widget.jobs{
+    text-align: center;
+}
+section.companie-show .widget.jobs > .list-group{
+    text-align: right;
+}
+section.companie-show .widget.jobs > .empty{
+    color: #34495e;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+section.companie-show > .content-show{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 80%;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 9px;
+    margin: 0px auto;
+    z-index: 2;
+    display: none;
+}
+
+section.companie-add{
+    width: auto;
+    margin-top: 37px;
+}
+body > section.companie-add .title{
+    width: auto;
+    color: #555;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+section.companie-add .logoup-input{
+    display: none;
+}
+section.companie-add .logoup-label{
+    background: #ddd;
+    border-radius: 5px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 11px;
+    display: block;
+}
+section.companie-add div div div > .insert .list-group > button{
+    text-align: right;
+}

@@ -1,0 +1,4 @@
+select * from jobs Join skills_jobs on jobs.id = skills_jobs.job_id  join skills_users on skills_users.skill_id = skills_jobs.skill_id and skills_users.skill_id = 1 and  skills_users.skill_id = 2
+
+
+select *,count(jobs.id) from jobs Join skills_jobs on jobs.id = skills_jobs.job_id join skills_users on skills_users.skill_id = skills_jobs.skill_id GROUP BY skills_jobs.skill_id
