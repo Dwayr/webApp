@@ -8,7 +8,7 @@
  */
 
 define('LARAVEL_START', microtime(true));
-define('MIN', false);
+define('MIN', true);
 
 /*
 |--------------------------------------------------------------------------
