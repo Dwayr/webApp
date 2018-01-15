@@ -1,0 +1,108 @@
+body > section.job{
+    width: auto;
+    margin-top: 37px;
+}
+body > section.job .title{
+    width: auto;
+    color: #232323;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+body > section.job .title > i.fa{
+    color: #111;
+}
+body > section.job h1{
+    color: #555;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 23px;
+}
+body > section.job .job-list{
+    width: auto;
+}
+body > section.job .job-list > .job-box{
+    width: auto;
+    background: #eee;
+    border-right: 5px solid #2ecc71;
+    padding: 35px 25px;
+}
+body > section.job .job-list > .job-box:nth-child(odd) {
+    background: #e5e5e5;
+}
+body > section.job .job-list > .job-box h2{
+    margin: 0px;
+    margin-bottom: 11px;
+}
+body > section.job .job-list > .job-box h2 a{
+    text-decoration: none;
+}
+body > section.job .job-list > .job-box p{
+    font-size: 15px;
+}
+body > section.job .job-list > .job-box p span{
+    margin-left: 9px;
+}
+body > section.job .filters{
+    width: auto;
+}
+body > section.job .filters > .title{
+    color: #232323;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+body > section.job .filters > .komicho-input-group{
+    margin-bottom: 37px;
+}
+body > section.job.show{
+    width: auto;
+    text-align: center;
+    padding: 25px;
+}
+body > section.job.show .box{
+    width: auto;
+    background: #f5f5f5;
+    padding: 39px 0px;
+}
+body > section.job.show .box > i.fa{
+    color: #555;
+    font-size: 99px;
+    display: block;
+}
+body > section.job.show .box > span{
+    color: #121212;
+    font-size: 17px;
+}
+body > section.job.show .description{
+    background: #f5f5f5;
+    color: #121212;
+    font-size: 19px;
+    text-align: right;
+    padding: 15px;
+    margin-top: 27px;
+}
+body > section.job.show .description ul{
+    margin-right: 27px !important;
+}
+body > section.job.show button.apply{
+    background: #2ecc71;
+    border: 0px;
+    color: #fff;
+    font-size: 19px;
+    padding: 15px 29px;
+    margin-top: 13px;
+}
+
+body > section.job.show .info{
+    background: #f5f5f5;
+    color: #121212;
+    font-size: 19px;
+    text-align: right;
+    padding: 15px;
+    margin-top: 27px;
+}
+body > section.job.show .info > p{
+    margin: auto;
+}
+body > section.job.show .info > p > i.fa{
+    color: #aaa;
+}

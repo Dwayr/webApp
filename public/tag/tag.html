@@ -1,0 +1,14 @@
+<div class="man-custom">
+    <table>
+        <tr>
+            <td class="img">
+                <img ng-src="http://www.komicho.com/avatar/{% data.username %}">
+            </td>
+            <td>
+                <span ng-bind-html="$highlight($getDisplayText())"></span>
+                <br />
+                <i>{% data.firstName %} {% data.lastName %}</i>
+            </td>
+        </tr>
+    </table>
+</div>

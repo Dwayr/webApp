@@ -1,0 +1,62 @@
+body > section.account{
+    width: auto;
+    margin-top: 37px;
+}
+body > section.account div div div .account-box{
+    width: auto;
+    background: #eee;
+    padding: 15px;
+}
+body > section.account div div div .account-box > .title{
+    width: auto;
+    border-bottom: 1px solid #ddd;
+    color: #232323;
+    font-size: 19px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+body > section.account div div div .account-box > .content{
+    width: auto;
+}
+body > section.account div div div .account-box > .content.notifications{
+    text-align: center;
+}
+body > section.account div div div .account-box > .content.notifications > i.fa{
+    color: #2ecc71;
+    font-size: 55px;
+}
+body > section.account div div div .account-box > .content.notifications > b{
+    color: #232323;
+    font-size: 39px;
+    display: block;
+}
+body > section.account div div div .account-box > .content.notifications > p{
+    color: #232323;
+    font-size: 39px;
+    margin: 0px;
+}
+
+body > section.account div div div .account-box > .content.jobs .job-list{
+    width: auto;
+}
+body > section.account div div div .account-box > .content.jobs .job-list > .job-box{
+    width: auto;
+    background: #f9f9f9;
+    padding: 15px;
+}
+body > section.account div div div .account-box > .content.jobs .job-box:nth-child(odd) {
+    background: #f5f5f5;
+}
+body > section.account div div div .account-box > .content.jobs .job-list > .job-box h2{
+    margin: 0px;
+    margin-bottom: 11px;
+}
+body > section.account div div div .account-box > .content.jobs .job-list > .job-box h2 a{
+    text-decoration: none;
+}
+body > section.account div div div .account-box > .content.jobs .job-list > .job-box p{
+    font-size: 15px;
+}
+body > section.account div div div .account-box > .content.jobs .job-list > .job-box p span{
+    margin-left: 9px;
+}

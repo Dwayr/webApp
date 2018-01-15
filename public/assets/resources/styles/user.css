@@ -1,0 +1,93 @@
+body > section.user-show{
+    width: auto;
+    margin-top: 37px;
+}
+body > section.user-show > .info{
+    width: auto;
+    padding: 25px;
+    text-align: center;
+}
+body > section.user-show > .info > img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+body > section.user-show > .info > h3{
+    color: #232323;
+    margin: 0;
+    margin-top: 15px;
+}
+body > section.user-show > .info > h3 > i.fa{
+    color: #2ecc71;
+}
+body > section.user-show > .info > span{
+    color: #999;
+}
+body > section.user-show > .data{
+    width: auto;
+    background: #eee;
+    padding: 19px 0px;
+}
+body > section.user-show > .data > div div div > .box{
+    width: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+body > section.user-show > .data > div div div > .box > .title{
+    border-bottom: 1px solid #ddd;
+    color: #232323;
+    font-size: 23px;
+    padding: 15px;
+}
+body > section.user-show > .data > div div div > .box > .content{
+    border-bottom: 1px solid #ddd;
+    color: #232323;
+    font-size: 15px;
+    padding: 15px;
+}
+/*projects*/
+body > section.user-show > .data > div div div > .box > .content .projects{
+    width: auto;
+}
+body > section.user-show > .data > div div div > .box > .content .projects > div div > .project{
+    background: #eee;
+    border-bottom: 5px solid #2ecc71;
+    text-align: center;
+    padding: 25px 9px;
+    margin: 11px 0px;
+}
+body > section.user-show > .data > div div div > .box > .content .projects > div div > .project img{
+    width: 125px;
+    height: 125px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+body > section.user-show > .data > div div div > .box > .content .projects > div div > .project b{
+    color: #34495e;
+    font-size: 17px;
+    display: block;
+}
+/*companies*/
+body > section.user-show > .data > div div div > .box > .content .companies{
+    width: auto;
+}
+body > section.user-show > .data > div div div > .box > .content .companies > div div > .companie{
+    background: #eee;
+    border-bottom: 5px solid #2ecc71;
+    padding: 11px 9px;
+    margin: 11px 0px;
+}
+body > section.user-show > .data > div div div > .box > .content .companies > div div > .companie img{
+    width: 64px;
+    height: 64px;
+    margin-left: 15px;
+}
+body > section.user-show > .data > div div div > .box > .content .companies > div div > .companie h4{
+    color: #232323;
+    font-size: 19px;
+}
+body > section.user-show > .data > div div div > .box > .content .companies > div div > .companie p{
+    color: #999;
+    font-size: 15px;
+}
