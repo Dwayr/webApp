@@ -10,9 +10,9 @@
             @if ( $data['profile']->is_activated == 2 )
             <center><h1>الحساب معطل</h1></center>
             @else
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="list-group">
                             <a href="#showInfo" ng-click="showInfo()" class="list-group-item" ng-class="{'active': _showInfo == true}">الملف الشخصي</a>
                             <a href="#showProjects" ng-click="showProjects()" class="list-group-item" ng-class="{'active': _showProjects == true}">معرض المشاريع</a>
@@ -20,7 +20,7 @@
                         </div>
                         <br>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                         <div class="box" ng-show="_showInfo" id="showInfo">
                             <div class="title"><i class="fa fa-user-circle" aria-hidden="true"></i> نبذة عني</div>
                             <div class="content">{{ $data['profile']->about }}</div>
@@ -72,12 +72,14 @@
                         </div>
                     </div>
 
+<!--
                     <div class="col-md-4">
                         <div class="box">
                             <div class="title"><i class="fa fa-info-circle" aria-hidden="true"></i> المعلومات الساسية</div>
                             <div class="content">محتوي</div>
                         </div>
                     </div>
+-->
                 </div>
             </div>
             @endif
