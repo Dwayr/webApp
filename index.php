@@ -22,7 +22,7 @@ define('MIN', false);
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/A_8eb7a7dc0554d35e0dbc525df197076f_core/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once __DIR__.'/A_8eb7a7dc0554d35e0dbc525df197076f_core/bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
