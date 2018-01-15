@@ -117,8 +117,8 @@
                     </ul>
                 </li>
                 @else
-                <li><a href="/sign-up"><i class="fa fa-user-plus" aria-hidden="true"></i> تسجيل حساب</a></li>
                 <li><a href="/sign-in"><i class="fa fa-sign-in" aria-hidden="true"></i> تسجيل دخول</a></li>
+                <li><a href="/sign-up"><i class="fa fa-user-plus" aria-hidden="true"></i> تسجيل حساب</a></li>
             @endif
             </ul>
         </div><!-- /.navbar-collapse -->
