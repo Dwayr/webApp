@@ -9,14 +9,28 @@ use App\Http\Controllers\Session;
 use App\Models\Notification;
 use App\Models\User;
 use App\Models\Job;
+use App\Models\Companie;
+use App\Models\Team;
 
 class Notifications extends Controller
 {
     public static function make_notification_type($type)
     {
         if ( $type == 'JOBAPPLY') {
-            return 'تقدم الي وظيفة';
+            $out = 'تقدم الي وظيفة';
+        } elseif ( $type == 'ADDTOTEAM' ) {
+            $out = 'تمت اضافتك الي فريق';
         }
+        return $out;
+    }
+    public static function make_notification_content($type, $content)
+    {
+        if ( $type == 'JOBAPPLY') {
+            $out = Job::getData(['id' => $content])->title;
+        } elseif ( $type == 'ADDTOTEAM' ) {
+            $out = Companie::getDataById($content)->name;
+        }
+        return $out;
     }
     public static function list_header()
     {
@@ -27,7 +41,7 @@ class Notifications extends Controller
                 'id' => $value->id,
                 'type' => self::make_notification_type($value->notification_type),
                 'username' => User::getData(['id' => $value->user_from])->username,
-                'content' => Job::getData(['id' => $value->notification_content])->title,
+                'content' => self::make_notification_content($value->notification_type, $value->notification_content),
             ];
         }
         
@@ -61,7 +75,8 @@ class Notifications extends Controller
                 'typeView' => $notification->notification_type,
                 'type' => self::make_notification_type($notification->notification_type),
                 'username' => User::getData(['id' => $notification->user_from])->username,
-                'content' => Job::getData(['id' => $notification->notification_content])->title,
+//                'content' => Job::getData(['id' => $notification->notification_content])->title,
+                'content' => self::make_notification_content($notification->notification_type, $notification->notification_content),
             ];
             return view('notification.show',[
                 'header_title' => 'دواير | عرض اشعار',
@@ -78,6 +93,31 @@ class Notifications extends Controller
             ->update([
                 'is_read' => true
             ]);
+    }
+    
+    public function ADDTOTEAM_done($id)
+    {
+        $notification = Notification::where('id', '=', $id)->first();
+        $user_public_code = User::getData(['id' => $notification->user_to])->public_code;
+        Team::where('user_public_code', '=', $user_public_code)
+            ->where('companie_id', '=', $notification->notification_content)
+            ->update([
+                'status' => 2
+            ]);
+        $url_co = Companie::where('id', '=', $notification->notification_content)->first()->url;
+        return redirect('/'.$url_co);
+    }
+    
+    public function ADDTOTEAM_close($id)
+    {
+        $notification = Notification::where('id', '=', $id)->first();
+        $user_public_code = User::getData(['id' => $notification->user_to])->public_code;
+        Team::where('user_public_code', '=', $user_public_code)
+            ->where('companie_id', '=', $notification->notification_content)
+            ->update([
+                'status' => 3
+            ]);
+        return redirect('/');
     }
     
 }

@@ -105,6 +105,8 @@ Route::group(['prefix' => 'feed'], function () {
 // show por
 Route::get('/notifications', 'Users@notifications');
 Route::get('/notification/{id}', 'Notifications@show');
+Route::get('/notification/toteamdone/{id}', 'Notifications@ADDTOTEAM_done');
+Route::get('/notification/toteamclose/{id}', 'Notifications@ADDTOTEAM_close');
 Route::get('/faq', 'Dwayr@faq');
 Route::get('/sendTo', 'Jobs@sendTo'); // del
 Route::get('/cv', 'Users@generate_cv'); // del

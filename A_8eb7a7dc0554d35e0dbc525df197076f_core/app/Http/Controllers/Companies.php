@@ -16,6 +16,7 @@ use App\Models\Team;
 use App\Models\Rss;
 use App\Models\Reat as CR;
 use App\Models\Job;
+use App\Models\Notification;
 
 class Companies extends Controller
 {
@@ -296,6 +297,9 @@ class Companies extends Controller
                 'message' => 'قم بتحديد تاريخ بداء العمل'
             ];
         } else {
+            // add notification
+            Notification::add(Session::get('user_id'), User::getData(['public_code' => $req->user_public_code])->id, 'ADDTOTEAM', $req->companie_id);
+            //
             $req['work_end_history'] = $req->work_start_history;
             companieTeam::add($req->only([
                 'companie_id',

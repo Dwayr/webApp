@@ -72,6 +72,11 @@ class Companie extends Model
             ->first();
     }
     
+    public static function getDataById($id)
+    {
+        return self::where('id', '=', $id)->first();
+    }
+    
     public static function exist($where)
     {
         return self::where($where)->exists();
