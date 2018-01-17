@@ -9,6 +9,8 @@
         <div class="data">
             @if ( $data['profile']->is_activated == 2 )
             <center><h1>الحساب معطل</h1></center>
+            @elseif ( $data['profile']->username == 'support' )
+            <!-- support -->
             @else
             <div class="container">
                 <div class="row">
