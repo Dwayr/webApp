@@ -36,7 +36,7 @@
                                         <div class="media">
                                             <div class="media-left">
                                                 <a href="#">
-                                                <img class="media-object" src="/user/avatar/{{ $i->username }}" alt="...">
+                                                <img class="media-object" src="https://www.gravatar.com/avatar/{{ md5( strtolower( trim( $i->email ) ) ) }}?s=500" alt="...">
                                                 </a>
                                             </div>
                                             <div class="media-body">

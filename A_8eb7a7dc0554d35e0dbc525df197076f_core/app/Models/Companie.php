@@ -50,6 +50,7 @@ class Companie extends Model
             ->join('users', 'users.public_code', 'companie_team.user_public_code')
             ->select([
                 'users.username',
+                'users.email',
                 'companie_team.companie_id',
             ]);
     }
