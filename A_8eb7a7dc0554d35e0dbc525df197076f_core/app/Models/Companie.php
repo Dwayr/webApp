@@ -52,6 +52,7 @@ class Companie extends Model
                 'users.username',
                 'users.email',
                 'companie_team.companie_id',
+                'companie_team.user_position AS position',
             ]);
     }
     

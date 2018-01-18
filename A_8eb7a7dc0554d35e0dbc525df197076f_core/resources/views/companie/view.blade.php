@@ -21,7 +21,7 @@
                                 <div class="col-md-4">
                                     <div class="project">
                                         <img src="{{ url('/') }}/project/logo/{{ $i->id }}">
-                                        <b>{{ $i->title }}</b>
+                                        <b><a href="/project/show/{{ $i->id }}">{{ $i->title }}</a></b>
                                     </div>
                                 </div>
 @endforeach
@@ -41,7 +41,7 @@
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading">{{ $i->username }}</h4>
-                                                <p>web devolber</p>
+                                                <p>{{ $i->position }}</p>
                                             </div>
                                         </div>
                                     </div>
