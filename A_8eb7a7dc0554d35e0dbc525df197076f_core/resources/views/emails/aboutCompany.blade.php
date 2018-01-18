@@ -16,9 +16,9 @@
         <div style="background-color: #ffffcc; border-right: 7px solid #ffeb3b; color:#34495e; font-size: 17px; font-weight: bold; padding: 9px 19px;">
             <p>المطور المقترح من دواير يكون تم التاكد من جميع الخبرات والمهارات لديه</p>
         </div>
-        <p><a href="http://dwayr.com/faq" style="color:#2ecc71;">الأسئلة الشائعة</a></p>
+        <p><a href="https://dwayr.com/faq" style="color:#2ecc71;">الأسئلة الشائعة</a></p>
         <br/>
-        <p><a href="http://dwayr.com/sign-in" style="background: #2ecc71; border-radius: 5px; color: #fff; font-size: 17px; text-decoration: none; padding: 17px;">تسجيل دخول</a></p>
+        <p><a href="https://dwayr.com/sign-in" style="background: #2ecc71; border-radius: 5px; color: #fff; font-size: 17px; text-decoration: none; padding: 17px;">تسجيل دخول</a></p>
     </section>
 </body>
 </html>
