@@ -15,7 +15,9 @@ class DwayrOptions extends Migration
     {
         Schema::create('dwayr_options', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('options_parent')->default(0);
             $table->string('options_collection');
+            $table->string('options_prefix');
             $table->string('options_name');
         });
     }
