@@ -102,6 +102,10 @@ Route::group(['prefix' => 'mailer'], function () {
 Route::group(['prefix' => 'feed'], function () {
     Route::get('/job', 'Jobs@rssFeed');
 });
+// admin
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'Admin@login');
+});
 // show por
 Route::get('/notifications', 'Users@notifications');
 Route::get('/notification/{id}', 'Notifications@show');
