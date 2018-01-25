@@ -36,7 +36,12 @@ class Profile extends Model
     }
     public static function get_type($url)
     {
-        return self::where('url', '=', $url)->first()->type;
+        $exist = self::where('url', '=', $url)->exists();
+        if ( $exist ) {
+            return self::where('url', '=', $url)->first()->type;
+        } else {
+            abort(404);
+        }
     }
     public static function exist($where)
     {
