@@ -242,7 +242,7 @@ body{
             <hr>
             <div class='_1'>THE PAGE</div>
             <div class='_2'>WAS NOT FOUND</div>
-            <a class='btn' href='{{ url('/') }}'>BACK TO MARS</a>
+            <a class='btn' href='{{ url('/') }}'>BACK TO HOME</a>
         </div>
 </body>
 </html>
